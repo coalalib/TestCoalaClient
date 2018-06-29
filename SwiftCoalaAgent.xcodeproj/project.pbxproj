@@ -17,6 +17,7 @@
 		8B055D2220E64570002B0734 /* Coala.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D1A20E64568002B0734 /* Coala.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8B055D3820E646AF002B0734 /* NDMAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D3520E646A0002B0734 /* NDMAPI.framework */; };
 		8B055D3920E646AF002B0734 /* NDMAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D3520E646A0002B0734 /* NDMAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B055D3E20E64707002B0734 /* CoalaAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D3D20E64707002B0734 /* CoalaAgent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		8B055A9020E643B4002B0734 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		8B055D1120E64568002B0734 /* Coala.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Coala.xcodeproj; path = ndm.api/Coala/Coala.xcodeproj; sourceTree = "<group>"; };
 		8B055D2E20E646A0002B0734 /* NDMAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NDMAPI.xcodeproj; path = ndm.api/NDMAPI.xcodeproj; sourceTree = "<group>"; };
+		8B055D3D20E64707002B0734 /* CoalaAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalaAgent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				8B055A4520E63FED002B0734 /* AppDelegate.swift */,
 				8B055A9020E643B4002B0734 /* Bridge.h */,
 				8B055A4720E63FED002B0734 /* LocalDevicesViewController.swift */,
+				8B055D3C20E646F9002B0734 /* Coala agent */,
 				8B055A5720E64001002B0734 /* Resources */,
 			);
 			path = SwiftCoalaAgent;
@@ -188,6 +191,14 @@
 				8B055D3720E646A0002B0734 /* NDMAPITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8B055D3C20E646F9002B0734 /* Coala agent */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D3D20E64707002B0734 /* CoalaAgent.swift */,
+			);
+			path = "Coala agent";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B055A4820E63FED002B0734 /* LocalDevicesViewController.swift in Sources */,
+				8B055D3E20E64707002B0734 /* CoalaAgent.swift in Sources */,
 				8B055A4620E63FED002B0734 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
