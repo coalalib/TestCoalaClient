@@ -12,7 +12,86 @@
 		8B055A4B20E63FED002B0734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B055A4920E63FED002B0734 /* Main.storyboard */; };
 		8B055A4D20E63FEF002B0734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B055A4C20E63FEF002B0734 /* Assets.xcassets */; };
 		8B055A5020E63FEF002B0734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B055A4E20E63FEF002B0734 /* LaunchScreen.storyboard */; };
+		8B055A8720E64321002B0734 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055A8620E64321002B0734 /* Security.framework */; };
+		8B055D2120E64570002B0734 /* Coala.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D1A20E64568002B0734 /* Coala.framework */; };
+		8B055D2220E64570002B0734 /* Coala.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D1A20E64568002B0734 /* Coala.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B055D3820E646AF002B0734 /* NDMAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D3520E646A0002B0734 /* NDMAPI.framework */; };
+		8B055D3920E646AF002B0734 /* NDMAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D3520E646A0002B0734 /* NDMAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B055D1920E64568002B0734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B055D1120E64568002B0734 /* Coala.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 618F3FFC1D7DAA430081C9BC;
+			remoteInfo = Coala;
+		};
+		8B055D1B20E64568002B0734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B055D1120E64568002B0734 /* Coala.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 614C53301D8019A30093A099;
+			remoteInfo = CoalaTests;
+		};
+		8B055D1D20E64568002B0734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B055D1120E64568002B0734 /* Coala.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 616FD17D1F31CCD2000D0A14;
+			remoteInfo = CoalaFunctionalTests;
+		};
+		8B055D1F20E64568002B0734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B055D1120E64568002B0734 /* Coala.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 61EC15B71E44B1B0000DD748;
+			remoteInfo = CoalaIntegrationTests;
+		};
+		8B055D2320E64570002B0734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B055D1120E64568002B0734 /* Coala.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 618F3FFB1D7DAA430081C9BC;
+			remoteInfo = Coala;
+		};
+		8B055D3420E646A0002B0734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B055D2E20E646A0002B0734 /* NDMAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 612510F51DF844DD00D43771;
+			remoteInfo = NDMAPI;
+		};
+		8B055D3620E646A0002B0734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B055D2E20E646A0002B0734 /* NDMAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 612510FE1DF844DD00D43771;
+			remoteInfo = NDMAPITests;
+		};
+		8B055D3A20E646AF002B0734 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B055D2E20E646A0002B0734 /* NDMAPI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 612510F41DF844DD00D43771;
+			remoteInfo = NDMAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B055A6D20E641DB002B0734 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8B055D2220E64570002B0734 /* Coala.framework in Embed Frameworks */,
+				8B055D3920E646AF002B0734 /* NDMAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8B055A4220E63FED002B0734 /* SwiftCoalaAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCoalaAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +101,10 @@
 		8B055A4C20E63FEF002B0734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B055A4F20E63FEF002B0734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B055A5120E63FEF002B0734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B055A8620E64321002B0734 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8B055A9020E643B4002B0734 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		8B055D1120E64568002B0734 /* Coala.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Coala.xcodeproj; path = ndm.api/Coala/Coala.xcodeproj; sourceTree = "<group>"; };
+		8B055D2E20E646A0002B0734 /* NDMAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NDMAPI.xcodeproj; path = ndm.api/NDMAPI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B055A8720E64321002B0734 /* Security.framework in Frameworks */,
+				8B055D3820E646AF002B0734 /* NDMAPI.framework in Frameworks */,
+				8B055D2120E64570002B0734 /* Coala.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +124,11 @@
 		8B055A3920E63FED002B0734 = {
 			isa = PBXGroup;
 			children = (
+				8B055D2E20E646A0002B0734 /* NDMAPI.xcodeproj */,
+				8B055D1120E64568002B0734 /* Coala.xcodeproj */,
 				8B055A4420E63FED002B0734 /* SwiftCoalaAgent */,
 				8B055A4320E63FED002B0734 /* Products */,
+				8B055A5820E6413F002B0734 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				8B055A4520E63FED002B0734 /* AppDelegate.swift */,
+				8B055A9020E643B4002B0734 /* Bridge.h */,
 				8B055A4720E63FED002B0734 /* LocalDevicesViewController.swift */,
 				8B055A5720E64001002B0734 /* Resources */,
 			);
@@ -72,6 +162,34 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8B055A5820E6413F002B0734 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B055A8620E64321002B0734 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B055D1220E64568002B0734 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D1A20E64568002B0734 /* Coala.framework */,
+				8B055D1C20E64568002B0734 /* CoalaTests.xctest */,
+				8B055D1E20E64568002B0734 /* CoalaFunctionalTests.xctest */,
+				8B055D2020E64568002B0734 /* CoalaIntegrationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B055D2F20E646A0002B0734 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D3520E646A0002B0734 /* NDMAPI.framework */,
+				8B055D3720E646A0002B0734 /* NDMAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,10 +200,13 @@
 				8B055A3E20E63FED002B0734 /* Sources */,
 				8B055A3F20E63FED002B0734 /* Frameworks */,
 				8B055A4020E63FED002B0734 /* Resources */,
+				8B055A6D20E641DB002B0734 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B055D2420E64570002B0734 /* PBXTargetDependency */,
+				8B055D3B20E646AF002B0734 /* PBXTargetDependency */,
 			);
 			name = SwiftCoalaAgent;
 			productName = SwiftCoalaAgent;
@@ -118,12 +239,67 @@
 			mainGroup = 8B055A3920E63FED002B0734;
 			productRefGroup = 8B055A4320E63FED002B0734 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8B055D1220E64568002B0734 /* Products */;
+					ProjectRef = 8B055D1120E64568002B0734 /* Coala.xcodeproj */;
+				},
+				{
+					ProductGroup = 8B055D2F20E646A0002B0734 /* Products */;
+					ProjectRef = 8B055D2E20E646A0002B0734 /* NDMAPI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8B055A4120E63FED002B0734 /* SwiftCoalaAgent */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8B055D1A20E64568002B0734 /* Coala.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Coala.framework;
+			remoteRef = 8B055D1920E64568002B0734 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B055D1C20E64568002B0734 /* CoalaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoalaTests.xctest;
+			remoteRef = 8B055D1B20E64568002B0734 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B055D1E20E64568002B0734 /* CoalaFunctionalTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoalaFunctionalTests.xctest;
+			remoteRef = 8B055D1D20E64568002B0734 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B055D2020E64568002B0734 /* CoalaIntegrationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoalaIntegrationTests.xctest;
+			remoteRef = 8B055D1F20E64568002B0734 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B055D3520E646A0002B0734 /* NDMAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NDMAPI.framework;
+			remoteRef = 8B055D3420E646A0002B0734 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B055D3720E646A0002B0734 /* NDMAPITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NDMAPITests.xctest;
+			remoteRef = 8B055D3620E646A0002B0734 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8B055A4020E63FED002B0734 /* Resources */ = {
@@ -149,6 +325,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B055D2420E64570002B0734 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Coala;
+			targetProxy = 8B055D2320E64570002B0734 /* PBXContainerItemProxy */;
+		};
+		8B055D3B20E646AF002B0734 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NDMAPI;
+			targetProxy = 8B055D3A20E646AF002B0734 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8B055A4920E63FED002B0734 /* Main.storyboard */ = {
@@ -287,16 +476,20 @@
 		8B055A5520E63FEF002B0734 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJGFC763W4;
-				INFOPLIST_FILE = SwiftCoalaAgent/Info.plist;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCoalaAgent/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndmsystems.swiftCoalaAgent.SwiftCoalaAgent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndmsystems.swiftCoalaAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = $SRCROOT/SwiftCoalaAgent/Bridge.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,16 +498,20 @@
 		8B055A5620E63FEF002B0734 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJGFC763W4;
-				INFOPLIST_FILE = SwiftCoalaAgent/Info.plist;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCoalaAgent/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ndmsystems.swiftCoalaAgent.SwiftCoalaAgent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndmsystems.swiftCoalaAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = $SRCROOT/SwiftCoalaAgent/Bridge.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
