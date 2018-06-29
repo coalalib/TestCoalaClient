@@ -1,0 +1,4 @@
+[submodule "ndm.api"]
+	path = ndm.api
+	url = git@github.com:ndmsystems/ndm.api.ios.git
+	branch = cloud
