@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B055A4620E63FED002B0734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055A4520E63FED002B0734 /* AppDelegate.swift */; };
-		8B055A4820E63FED002B0734 /* LocalDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055A4720E63FED002B0734 /* LocalDevicesViewController.swift */; };
+		8B055A4820E63FED002B0734 /* LocalDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055A4720E63FED002B0734 /* LocalDeviceViewController.swift */; };
 		8B055A4B20E63FED002B0734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B055A4920E63FED002B0734 /* Main.storyboard */; };
 		8B055A4D20E63FEF002B0734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B055A4C20E63FEF002B0734 /* Assets.xcassets */; };
 		8B055A5020E63FEF002B0734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B055A4E20E63FEF002B0734 /* LaunchScreen.storyboard */; };
@@ -18,6 +18,23 @@
 		8B055D3820E646AF002B0734 /* NDMAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D3520E646A0002B0734 /* NDMAPI.framework */; };
 		8B055D3920E646AF002B0734 /* NDMAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D3520E646A0002B0734 /* NDMAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8B055D3E20E64707002B0734 /* CoalaAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D3D20E64707002B0734 /* CoalaAgent.swift */; };
+		8B055D4520E72959002B0734 /* LocalDevicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D4420E72959002B0734 /* LocalDevicesModel.swift */; };
+		8B055D4720E72B5C002B0734 /* LocalDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D4620E72B5C002B0734 /* LocalDeviceCell.swift */; };
+		8B055D4A20E72CF4002B0734 /* LocalDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D4920E72CF4002B0734 /* LocalDeviceViewModel.swift */; };
+		8B055D4C20E73087002B0734 /* Curve25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D4B20E73087002B0734 /* Curve25519.framework */; };
+		8B055D4D20E73087002B0734 /* Curve25519.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D4B20E73087002B0734 /* Curve25519.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B055D5020E751F1002B0734 /* DeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D4F20E751F1002B0734 /* DeviceExtension.swift */; };
+		8B055D5320E75893002B0734 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D5120E75893002B0734 /* Fabric.framework */; };
+		8B055D5420E75893002B0734 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B055D5220E75893002B0734 /* Crashlytics.framework */; };
+		8B055D5920E9F843002B0734 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D5820E9F843002B0734 /* LogView.swift */; };
+		8B055D5B20E9FBEE002B0734 /* LogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B055D5A20E9FBEE002B0734 /* LogCell.xib */; };
+		8B055D5F20EA04A4002B0734 /* LogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D5E20EA04A4002B0734 /* LogCell.swift */; };
+		8B055D7220EB067B002B0734 /* TestCaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D7120EB067B002B0734 /* TestCaseViewController.swift */; };
+		8B055D7E20EB1927002B0734 /* ArqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D7D20EB1927002B0734 /* ArqViewController.swift */; };
+		8B055D8020EB1BD5002B0734 /* ArqModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D7F20EB1BD5002B0734 /* ArqModel.swift */; };
+		8B055D8320EB2374002B0734 /* ArqDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D8220EB2374002B0734 /* ArqDeviceViewModel.swift */; };
+		8B055D8920EB24CA002B0734 /* ArqCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D8820EB24CA002B0734 /* ArqCell.swift */; };
+		8B055D9320EDD6FB002B0734 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D9220EDD6FB002B0734 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +105,7 @@
 			files = (
 				8B055D2220E64570002B0734 /* Coala.framework in Embed Frameworks */,
 				8B055D3920E646AF002B0734 /* NDMAPI.framework in Embed Frameworks */,
+				8B055D4D20E73087002B0734 /* Curve25519.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +115,7 @@
 /* Begin PBXFileReference section */
 		8B055A4220E63FED002B0734 /* SwiftCoalaAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCoalaAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B055A4520E63FED002B0734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B055A4720E63FED002B0734 /* LocalDevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDevicesViewController.swift; sourceTree = "<group>"; };
+		8B055A4720E63FED002B0734 /* LocalDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDeviceViewController.swift; sourceTree = "<group>"; };
 		8B055A4A20E63FED002B0734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B055A4C20E63FEF002B0734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B055A4F20E63FEF002B0734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,6 +125,22 @@
 		8B055D1120E64568002B0734 /* Coala.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Coala.xcodeproj; path = ndm.api/Coala/Coala.xcodeproj; sourceTree = "<group>"; };
 		8B055D2E20E646A0002B0734 /* NDMAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NDMAPI.xcodeproj; path = ndm.api/NDMAPI.xcodeproj; sourceTree = "<group>"; };
 		8B055D3D20E64707002B0734 /* CoalaAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoalaAgent.swift; sourceTree = "<group>"; };
+		8B055D4420E72959002B0734 /* LocalDevicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDevicesModel.swift; sourceTree = "<group>"; };
+		8B055D4620E72B5C002B0734 /* LocalDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDeviceCell.swift; sourceTree = "<group>"; };
+		8B055D4920E72CF4002B0734 /* LocalDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDeviceViewModel.swift; sourceTree = "<group>"; };
+		8B055D4B20E73087002B0734 /* Curve25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B055D4F20E751F1002B0734 /* DeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceExtension.swift; sourceTree = "<group>"; };
+		8B055D5120E75893002B0734 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		8B055D5220E75893002B0734 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		8B055D5820E9F843002B0734 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		8B055D5A20E9FBEE002B0734 /* LogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogCell.xib; sourceTree = "<group>"; };
+		8B055D5E20EA04A4002B0734 /* LogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCell.swift; sourceTree = "<group>"; };
+		8B055D7120EB067B002B0734 /* TestCaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCaseViewController.swift; sourceTree = "<group>"; };
+		8B055D7D20EB1927002B0734 /* ArqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqViewController.swift; sourceTree = "<group>"; };
+		8B055D7F20EB1BD5002B0734 /* ArqModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqModel.swift; sourceTree = "<group>"; };
+		8B055D8220EB2374002B0734 /* ArqDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqDeviceViewModel.swift; sourceTree = "<group>"; };
+		8B055D8820EB24CA002B0734 /* ArqCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqCell.swift; sourceTree = "<group>"; };
+		8B055D9220EDD6FB002B0734 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B055A8720E64321002B0734 /* Security.framework in Frameworks */,
+				8B055D5320E75893002B0734 /* Fabric.framework in Frameworks */,
 				8B055D3820E646AF002B0734 /* NDMAPI.framework in Frameworks */,
 				8B055D2120E64570002B0734 /* Coala.framework in Frameworks */,
+				8B055D5420E75893002B0734 /* Crashlytics.framework in Frameworks */,
+				8B055D4C20E73087002B0734 /* Curve25519.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +163,9 @@
 		8B055A3920E63FED002B0734 = {
 			isa = PBXGroup;
 			children = (
+				8B055D5220E75893002B0734 /* Crashlytics.framework */,
+				8B055D5120E75893002B0734 /* Fabric.framework */,
+				8B055D4B20E73087002B0734 /* Curve25519.framework */,
 				8B055D2E20E646A0002B0734 /* NDMAPI.xcodeproj */,
 				8B055D1120E64568002B0734 /* Coala.xcodeproj */,
 				8B055A4420E63FED002B0734 /* SwiftCoalaAgent */,
@@ -147,7 +187,10 @@
 			children = (
 				8B055A4520E63FED002B0734 /* AppDelegate.swift */,
 				8B055A9020E643B4002B0734 /* Bridge.h */,
-				8B055A4720E63FED002B0734 /* LocalDevicesViewController.swift */,
+				8B055D7020EB0660002B0734 /* TestCaseViewController */,
+				8B055D7A20EB18F2002B0734 /* ArqViewController */,
+				8B055D4E20E751DF002B0734 /* Extensions */,
+				8B055D4120E72935002B0734 /* Local devices */,
 				8B055D3C20E646F9002B0734 /* Coala agent */,
 				8B055A5720E64001002B0734 /* Resources */,
 			);
@@ -197,8 +240,106 @@
 			isa = PBXGroup;
 			children = (
 				8B055D3D20E64707002B0734 /* CoalaAgent.swift */,
+				8B055D9220EDD6FB002B0734 /* Logger.swift */,
 			);
 			path = "Coala agent";
+			sourceTree = "<group>";
+		};
+		8B055D4120E72935002B0734 /* Local devices */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D4820E72CE5002B0734 /* ViewModel */,
+				8B055D4320E7294D002B0734 /* View */,
+				8B055D4220E72940002B0734 /* Model */,
+			);
+			path = "Local devices";
+			sourceTree = "<group>";
+		};
+		8B055D4220E72940002B0734 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D4420E72959002B0734 /* LocalDevicesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B055D4320E7294D002B0734 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B055A4720E63FED002B0734 /* LocalDeviceViewController.swift */,
+				8B055D4620E72B5C002B0734 /* LocalDeviceCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B055D4820E72CE5002B0734 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D4920E72CF4002B0734 /* LocalDeviceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B055D4E20E751DF002B0734 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D4F20E751F1002B0734 /* DeviceExtension.swift */,
+				8B055D5720E9F81C002B0734 /* LogView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8B055D5720E9F81C002B0734 /* LogView */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D5820E9F843002B0734 /* LogView.swift */,
+				8B055D5A20E9FBEE002B0734 /* LogCell.xib */,
+				8B055D5E20EA04A4002B0734 /* LogCell.swift */,
+			);
+			path = LogView;
+			sourceTree = "<group>";
+		};
+		8B055D7020EB0660002B0734 /* TestCaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D7120EB067B002B0734 /* TestCaseViewController.swift */,
+			);
+			path = TestCaseViewController;
+			sourceTree = "<group>";
+		};
+		8B055D7A20EB18F2002B0734 /* ArqViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D8120EB2364002B0734 /* ViewModel */,
+				8B055D7C20EB190B002B0734 /* Model */,
+				8B055D7B20EB1906002B0734 /* View */,
+			);
+			path = ArqViewController;
+			sourceTree = "<group>";
+		};
+		8B055D7B20EB1906002B0734 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D7D20EB1927002B0734 /* ArqViewController.swift */,
+				8B055D8820EB24CA002B0734 /* ArqCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B055D7C20EB190B002B0734 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D7F20EB1BD5002B0734 /* ArqModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B055D8120EB2364002B0734 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D8220EB2374002B0734 /* ArqDeviceViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +353,7 @@
 				8B055A3F20E63FED002B0734 /* Frameworks */,
 				8B055A4020E63FED002B0734 /* Resources */,
 				8B055A6D20E641DB002B0734 /* Embed Frameworks */,
+				8B055D5620E758BA002B0734 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -318,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B055A5020E63FEF002B0734 /* LaunchScreen.storyboard in Resources */,
+				8B055D5B20E9FBEE002B0734 /* LogCell.xib in Resources */,
 				8B055A4D20E63FEF002B0734 /* Assets.xcassets in Resources */,
 				8B055A4B20E63FED002B0734 /* Main.storyboard in Resources */,
 			);
@@ -325,14 +468,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B055D5620E758BA002B0734 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 876ba52de3c6dc80e9fdcd09a267155d4b30e94d 3f6e6e9736c4a1e9325912213490a783d0508e1ea4910adf4ccd5742251bc779";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B055A3E20E63FED002B0734 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B055A4820E63FED002B0734 /* LocalDevicesViewController.swift in Sources */,
+				8B055D5F20EA04A4002B0734 /* LogCell.swift in Sources */,
+				8B055A4820E63FED002B0734 /* LocalDeviceViewController.swift in Sources */,
+				8B055D4520E72959002B0734 /* LocalDevicesModel.swift in Sources */,
+				8B055D4A20E72CF4002B0734 /* LocalDeviceViewModel.swift in Sources */,
+				8B055D7220EB067B002B0734 /* TestCaseViewController.swift in Sources */,
+				8B055D4720E72B5C002B0734 /* LocalDeviceCell.swift in Sources */,
+				8B055D8020EB1BD5002B0734 /* ArqModel.swift in Sources */,
 				8B055D3E20E64707002B0734 /* CoalaAgent.swift in Sources */,
+				8B055D5920E9F843002B0734 /* LogView.swift in Sources */,
 				8B055A4620E63FED002B0734 /* AppDelegate.swift in Sources */,
+				8B055D8320EB2374002B0734 /* ArqDeviceViewModel.swift in Sources */,
+				8B055D9320EDD6FB002B0734 /* Logger.swift in Sources */,
+				8B055D7E20EB1927002B0734 /* ArqViewController.swift in Sources */,
+				8B055D8920EB24CA002B0734 /* ArqCell.swift in Sources */,
+				8B055D5020E751F1002B0734 /* DeviceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,9 +661,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJGFC763W4;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftCoalaAgent/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,6 +677,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ndmsystems.swiftCoalaAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = $SRCROOT/SwiftCoalaAgent/Bridge.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,9 +690,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HJGFC763W4;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftCoalaAgent/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -523,6 +706,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ndmsystems.swiftCoalaAgent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = $SRCROOT/SwiftCoalaAgent/Bridge.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
