@@ -1,6 +1,4 @@
-# SwiftCoalaClient
-
-Simple Coala protocol client, written in Swift.
+# Simple Coala protocol test client, written in Swift.
 
 ## Functionality
 - [x] Send /info request to local peer
