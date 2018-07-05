@@ -1,4 +1,5 @@
-# Simple Coala protocol test client, written in Swift.
+# Coala test client
+Simple Coala protocol test client, written in Swift.
 
 ## Functionality
 - [x] Send /info request to local peer
