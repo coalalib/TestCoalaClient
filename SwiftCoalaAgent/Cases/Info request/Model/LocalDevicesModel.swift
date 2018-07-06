@@ -42,7 +42,7 @@ class LocalDevicesModel {
   }
 
   func getInfo(for device: LocalDeviceViewModel) {
-    coalaAgent.getInfo(for: device.address) { [weak self] result in
+    coalaAgent.getInfo(for: device.address, scheme: scheme) { [weak self] result in
       switch result {
       case .success(let peer):
         let deviceInfo = LocalDeviceViewModel(address: device.address, peer: peer)

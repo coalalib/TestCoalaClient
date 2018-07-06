@@ -32,10 +32,11 @@ class CoalaAgent {
     coala.resourceDiscovery.run(completion: completion)
   }
   
-  func getInfo(for address: String, scheme: Scheme = .coaps, completion: @escaping (Result<Peer>) -> Void) {
+  func getInfo(for address: String, scheme: Scheme = .coaps, proxy: Address? = nil, completion: @escaping (Result<Peer>) -> Void) {
     var url = scheme == .coaps ?  URL(string: "coaps://\(address)") :  URL(string: "coap://\(address)")
     url?.appendPathComponent("/info")
     var message = CoAPMessage(type: .confirmable, method: .get, url: url)
+    message.proxyViaAddress = proxy
     message.onResponse = { coalaResponse in
       switch coalaResponse {
       case .error(let error):

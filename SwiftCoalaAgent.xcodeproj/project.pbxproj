@@ -35,6 +35,10 @@
 		8B055D8320EB2374002B0734 /* ArqDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D8220EB2374002B0734 /* ArqDeviceViewModel.swift */; };
 		8B055D8920EB24CA002B0734 /* ArqCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D8820EB24CA002B0734 /* ArqCell.swift */; };
 		8B055D9320EDD6FB002B0734 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D9220EDD6FB002B0734 /* Logger.swift */; };
+		8B055D9F20EF108B002B0734 /* ProxyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055D9E20EF108B002B0734 /* ProxyModel.swift */; };
+		8B055DA120EF1098002B0734 /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DA020EF1098002B0734 /* ProxyViewController.swift */; };
+		8B055DA320EF10A4002B0734 /* ProxyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DA220EF10A4002B0734 /* ProxyViewModel.swift */; };
+		8B055DA520EF11BA002B0734 /* ProxyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DA420EF11BA002B0734 /* ProxyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +145,10 @@
 		8B055D8220EB2374002B0734 /* ArqDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqDeviceViewModel.swift; sourceTree = "<group>"; };
 		8B055D8820EB24CA002B0734 /* ArqCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArqCell.swift; sourceTree = "<group>"; };
 		8B055D9220EDD6FB002B0734 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		8B055D9E20EF108B002B0734 /* ProxyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyModel.swift; sourceTree = "<group>"; };
+		8B055DA020EF1098002B0734 /* ProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
+		8B055DA220EF10A4002B0734 /* ProxyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewModel.swift; sourceTree = "<group>"; };
+		8B055DA420EF11BA002B0734 /* ProxyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,10 +195,9 @@
 			children = (
 				8B055A4520E63FED002B0734 /* AppDelegate.swift */,
 				8B055A9020E643B4002B0734 /* Bridge.h */,
+				8B055D9820EF0FA9002B0734 /* Cases */,
 				8B055D7020EB0660002B0734 /* TestCaseViewController */,
-				8B055D7A20EB18F2002B0734 /* ArqViewController */,
 				8B055D4E20E751DF002B0734 /* Extensions */,
-				8B055D4120E72935002B0734 /* Local devices */,
 				8B055D3C20E646F9002B0734 /* Coala agent */,
 				8B055A5720E64001002B0734 /* Resources */,
 			);
@@ -245,14 +252,14 @@
 			path = "Coala agent";
 			sourceTree = "<group>";
 		};
-		8B055D4120E72935002B0734 /* Local devices */ = {
+		8B055D4120E72935002B0734 /* Info request */ = {
 			isa = PBXGroup;
 			children = (
 				8B055D4820E72CE5002B0734 /* ViewModel */,
 				8B055D4320E7294D002B0734 /* View */,
 				8B055D4220E72940002B0734 /* Model */,
 			);
-			path = "Local devices";
+			path = "Info request";
 			sourceTree = "<group>";
 		};
 		8B055D4220E72940002B0734 /* Model */ = {
@@ -307,14 +314,14 @@
 			path = TestCaseViewController;
 			sourceTree = "<group>";
 		};
-		8B055D7A20EB18F2002B0734 /* ArqViewController */ = {
+		8B055D7A20EB18F2002B0734 /* ARQ */ = {
 			isa = PBXGroup;
 			children = (
 				8B055D8120EB2364002B0734 /* ViewModel */,
 				8B055D7C20EB190B002B0734 /* Model */,
 				8B055D7B20EB1906002B0734 /* View */,
 			);
-			path = ArqViewController;
+			path = ARQ;
 			sourceTree = "<group>";
 		};
 		8B055D7B20EB1906002B0734 /* View */ = {
@@ -338,6 +345,51 @@
 			isa = PBXGroup;
 			children = (
 				8B055D8220EB2374002B0734 /* ArqDeviceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B055D9820EF0FA9002B0734 /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D9920EF0FC8002B0734 /* Proxy */,
+				8B055D4120E72935002B0734 /* Info request */,
+				8B055D7A20EB18F2002B0734 /* ARQ */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
+		8B055D9920EF0FC8002B0734 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D9C20EF0FDD002B0734 /* Model */,
+				8B055D9A20EF0FD2002B0734 /* View */,
+				8B055D9D20EF0FE4002B0734 /* ViewModel */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
+		8B055D9A20EF0FD2002B0734 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B055DA020EF1098002B0734 /* ProxyViewController.swift */,
+				8B055DA420EF11BA002B0734 /* ProxyCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B055D9C20EF0FDD002B0734 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B055D9E20EF108B002B0734 /* ProxyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B055D9D20EF0FE4002B0734 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B055DA220EF10A4002B0734 /* ProxyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -492,17 +544,21 @@
 				8B055D5F20EA04A4002B0734 /* LogCell.swift in Sources */,
 				8B055A4820E63FED002B0734 /* LocalDeviceViewController.swift in Sources */,
 				8B055D4520E72959002B0734 /* LocalDevicesModel.swift in Sources */,
+				8B055DA320EF10A4002B0734 /* ProxyViewModel.swift in Sources */,
 				8B055D4A20E72CF4002B0734 /* LocalDeviceViewModel.swift in Sources */,
 				8B055D7220EB067B002B0734 /* TestCaseViewController.swift in Sources */,
 				8B055D4720E72B5C002B0734 /* LocalDeviceCell.swift in Sources */,
 				8B055D8020EB1BD5002B0734 /* ArqModel.swift in Sources */,
 				8B055D3E20E64707002B0734 /* CoalaAgent.swift in Sources */,
+				8B055DA120EF1098002B0734 /* ProxyViewController.swift in Sources */,
 				8B055D5920E9F843002B0734 /* LogView.swift in Sources */,
 				8B055A4620E63FED002B0734 /* AppDelegate.swift in Sources */,
 				8B055D8320EB2374002B0734 /* ArqDeviceViewModel.swift in Sources */,
+				8B055DA520EF11BA002B0734 /* ProxyCell.swift in Sources */,
 				8B055D9320EDD6FB002B0734 /* Logger.swift in Sources */,
 				8B055D7E20EB1927002B0734 /* ArqViewController.swift in Sources */,
 				8B055D8920EB24CA002B0734 /* ArqCell.swift in Sources */,
+				8B055D9F20EF108B002B0734 /* ProxyModel.swift in Sources */,
 				8B055D5020E751F1002B0734 /* DeviceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

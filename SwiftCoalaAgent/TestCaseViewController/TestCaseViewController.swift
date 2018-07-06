@@ -26,11 +26,19 @@ class TestCaseViewController: UITableViewController {
     navigationController?.pushViewController(vc, animated: true)
   }
   
+  private func showProxyTest() {
+    let model = ProxyModel()
+    let vc = mainStoryboard.instantiateViewController(withIdentifier: "ProxyViewController") as! ProxyViewController
+    vc.model = model
+    navigationController?.pushViewController(vc, animated: true)
+  }
+  
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     switch indexPath.row {
     case 0: showInfoTest()
     case 1: showArqTest(arqType: .upload)
     case 2: showArqTest(arqType: .download)
+    case 3: showProxyTest()
     default: break
     }
   }

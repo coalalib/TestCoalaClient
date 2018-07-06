@@ -123,13 +123,6 @@ extension LocalDeviceViewController: UITableViewDelegate, UITableViewDataSource 
 
 }
 
-//extension LocalDeviceViewController: CoalaLogable {
-//
-//  func didReceive(log: CoalaLog) {
-//    logView.add(log: log)
-//  }
-//
-//}
 
 extension UIScrollView {
   func setContentInsetAdjustment(enabled: Bool, in viewController: UIViewController) {
