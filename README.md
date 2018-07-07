@@ -5,4 +5,4 @@ Simple Coala protocol test client, written in Swift.
 - [x] Send /info request to local peer
 - [x] Upload data to local peer
 - [x] Download data from local peer
-- [ ] Send /info request to local peer using Proxy mode
+- [x] Send /info request to local peer using Proxy mode
