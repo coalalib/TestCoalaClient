@@ -39,6 +39,7 @@
 		8B055DA120EF1098002B0734 /* ProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DA020EF1098002B0734 /* ProxyViewController.swift */; };
 		8B055DA320EF10A4002B0734 /* ProxyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DA220EF10A4002B0734 /* ProxyViewModel.swift */; };
 		8B055DA520EF11BA002B0734 /* ProxyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DA420EF11BA002B0734 /* ProxyCell.swift */; };
+		8B055DE820F0A7DA002B0734 /* GetIpAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DE720F0A7DA002B0734 /* GetIpAddress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		8B055DA020EF1098002B0734 /* ProxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewController.swift; sourceTree = "<group>"; };
 		8B055DA220EF10A4002B0734 /* ProxyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewModel.swift; sourceTree = "<group>"; };
 		8B055DA420EF11BA002B0734 /* ProxyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyCell.swift; sourceTree = "<group>"; };
+		8B055DE720F0A7DA002B0734 /* GetIpAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIpAddress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				8B055D4F20E751F1002B0734 /* DeviceExtension.swift */,
+				8B055DE720F0A7DA002B0734 /* GetIpAddress.swift */,
 				8B055D5720E9F81C002B0734 /* LogView */,
 			);
 			path = Extensions;
@@ -541,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B055DE820F0A7DA002B0734 /* GetIpAddress.swift in Sources */,
 				8B055D5F20EA04A4002B0734 /* LogCell.swift in Sources */,
 				8B055A4820E63FED002B0734 /* LocalDeviceViewController.swift in Sources */,
 				8B055D4520E72959002B0734 /* LocalDevicesModel.swift in Sources */,

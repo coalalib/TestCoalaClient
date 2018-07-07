@@ -36,10 +36,14 @@ class ArqModel {
     }
     
     coalaAgent.startLocalSearch { [weak self] peers in
-      let foundedDevies = peers.map {
+      var foundedDevies = peers.map {
         ArqDeviceViewModel(device: LocalDeviceViewModel(address: "\($0.address.host):\($0.address.port)"),
                            transferedSpeed: nil, dataSize: nil)
       }
+      if let myIp = getWiFiAddress() {
+        foundedDevies = foundedDevies.filter({!$0.device.address.contains(myIp)})
+      }
+      
       DispatchQueue.main.async {
         self?.viewNotificationBlock?(.didFoundDevices(foundedDevies))
       }

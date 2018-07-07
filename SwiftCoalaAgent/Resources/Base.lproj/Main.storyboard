@@ -417,7 +417,7 @@
                                                 <action selector="schemeChanged:" destination="9fP-We-hTS" eventType="valueChanged" id="ON5-z1-ejM"/>
                                             </connections>
                                         </segmentedControl>
-                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" verticalCompressionResistancePriority="747" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter proxy address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-PD-IGQ">
+                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" verticalCompressionResistancePriority="747" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter proxy address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-PD-IGQ">
                                             <rect key="frame" x="8" y="44" width="359" height="32"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -434,6 +434,11 @@
                                         <constraint firstAttribute="trailing" secondItem="Od6-PD-IGQ" secondAttribute="trailing" constant="8" id="ruK-ze-Cq8"/>
                                         <constraint firstItem="Od6-PD-IGQ" firstAttribute="top" secondItem="DEP-8I-Rew" secondAttribute="bottom" constant="8" id="v6Q-7Z-tPH"/>
                                     </constraints>
+                                </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Hjs-bo-4PQ">
+                                    <rect key="frame" x="0.0" y="212" width="375" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProxyCell" rowHeight="100" id="OfN-IO-WWD" customClass="ProxyCell" customModule="SwiftCoalaAgent" customModuleProvider="target">

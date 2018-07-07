@@ -34,7 +34,10 @@ class LocalDevicesModel {
       self?.viewNotificationBlock?(.didFoundDevices([]))
     }
     coalaAgent.startLocalSearch { [weak self] peers in
-      let foundedDevies = peers.map { LocalDeviceViewModel(address: "\($0.address.host):\($0.address.port)") }
+      var foundedDevies = peers.map { LocalDeviceViewModel(address: "\($0.address.host):\($0.address.port)") }
+      if let myIp = getWiFiAddress() {
+        foundedDevies = foundedDevies.filter({!$0.address.contains(myIp)})
+      }
       DispatchQueue.main.async {
         self?.viewNotificationBlock?(.didFoundDevices(foundedDevies))
       }

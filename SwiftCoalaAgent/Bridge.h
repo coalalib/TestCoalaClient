@@ -7,4 +7,4 @@
 //
 
 // CocoaLumberjack
-
+#include <ifaddrs.h>

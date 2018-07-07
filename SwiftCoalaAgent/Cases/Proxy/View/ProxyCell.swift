@@ -15,11 +15,20 @@ class ProxyCell: UITableViewCell {
   @IBOutlet private weak var cidLabel: UILabel!
   @IBOutlet private weak var messageLabel: UILabel!
   
+  override func prepareForReuse() {
+    nameLabel.text = nil
+    cidLabel.text = nil
+    messageLabel.text = nil
+  }
   
-  func configure(with viewModel: ProxyViewModel) {
+  func configure(with viewModel: ArqDeviceViewModel) {
     nameLabel.text = viewModel.device.peerInfo?.name ?? viewModel.device.address
     cidLabel.text = viewModel.device.peerInfo?.cid
-    messageLabel.text = viewModel.device.peerInfo?.message
+    if let speed = viewModel.transferedSpeed, let data = viewModel.dataSize {
+      messageLabel.text = "Data of size \(data) Kbytes \nwas transfered with speed \(speed) KBytes/s"
+    } else {
+      messageLabel.text = viewModel.device.peerInfo?.message
+    }
   }
   
 }
