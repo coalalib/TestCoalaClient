@@ -33,12 +33,20 @@ class TestCaseViewController: UITableViewController {
     navigationController?.pushViewController(vc, animated: true)
   }
   
+  private func showRemoteTest() {
+    let model = RemotePeersModel()
+    let vc = mainStoryboard.instantiateViewController(withIdentifier: "RemotePeersViewController") as! RemotePeersViewController
+    vc.model = model
+    navigationController?.pushViewController(vc, animated: true)
+  }
+  
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     switch indexPath.row {
     case 0: showInfoTest()
     case 1: showArqTest(arqType: .upload)
     case 2: showArqTest(arqType: .download)
     case 3: showProxyTest()
+    case 4: showRemoteTest()
     default: break
     }
   }

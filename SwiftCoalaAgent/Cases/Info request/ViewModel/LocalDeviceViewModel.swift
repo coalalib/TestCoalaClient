@@ -14,17 +14,25 @@ struct LocalDeviceViewModel: Hashable {
   }
   
   let address: String
+  var cid: String?
   var peerInfo: Peer?
   
   init(address: String) {
     self.address = address
     peerInfo = nil
+    cid = nil
   }
   
   init(address: String, peer: Peer) {
     self.address = address
     self.peerInfo = peer
+    cid = nil
   }
   
+  init(address: String, peer: Peer?, cid: String?) {
+    self.address = address
+    self.peerInfo = peer
+    self.cid = cid
+  }
   
 }

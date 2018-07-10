@@ -40,6 +40,8 @@
 		8B055DA320EF10A4002B0734 /* ProxyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DA220EF10A4002B0734 /* ProxyViewModel.swift */; };
 		8B055DA520EF11BA002B0734 /* ProxyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DA420EF11BA002B0734 /* ProxyCell.swift */; };
 		8B055DE820F0A7DA002B0734 /* GetIpAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DE720F0A7DA002B0734 /* GetIpAddress.swift */; };
+		8B055DFD20F335B5002B0734 /* RemotePeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DFC20F335B5002B0734 /* RemotePeersViewController.swift */; };
+		8B055DFF20F3362F002B0734 /* RemotePeersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B055DFE20F3362F002B0734 /* RemotePeersModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +153,8 @@
 		8B055DA220EF10A4002B0734 /* ProxyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyViewModel.swift; sourceTree = "<group>"; };
 		8B055DA420EF11BA002B0734 /* ProxyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyCell.swift; sourceTree = "<group>"; };
 		8B055DE720F0A7DA002B0734 /* GetIpAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIpAddress.swift; sourceTree = "<group>"; };
+		8B055DFC20F335B5002B0734 /* RemotePeersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePeersViewController.swift; sourceTree = "<group>"; };
+		8B055DFE20F3362F002B0734 /* RemotePeersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePeersModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +359,7 @@
 		8B055D9820EF0FA9002B0734 /* Cases */ = {
 			isa = PBXGroup;
 			children = (
+				8B055DF520F33598002B0734 /* Remote peers */,
 				8B055D9920EF0FC8002B0734 /* Proxy */,
 				8B055D4120E72935002B0734 /* Info request */,
 				8B055D7A20EB18F2002B0734 /* ARQ */,
@@ -395,6 +400,31 @@
 				8B055DA220EF10A4002B0734 /* ProxyViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B055DF520F33598002B0734 /* Remote peers */ = {
+			isa = PBXGroup;
+			children = (
+				8B055DFB20F335A8002B0734 /* Model */,
+				8B055DFA20F335A4002B0734 /* View */,
+			);
+			path = "Remote peers";
+			sourceTree = "<group>";
+		};
+		8B055DFA20F335A4002B0734 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B055DFC20F335B5002B0734 /* RemotePeersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B055DFB20F335A8002B0734 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B055DFE20F3362F002B0734 /* RemotePeersModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,8 +577,10 @@
 				8B055DE820F0A7DA002B0734 /* GetIpAddress.swift in Sources */,
 				8B055D5F20EA04A4002B0734 /* LogCell.swift in Sources */,
 				8B055A4820E63FED002B0734 /* LocalDeviceViewController.swift in Sources */,
+				8B055DFF20F3362F002B0734 /* RemotePeersModel.swift in Sources */,
 				8B055D4520E72959002B0734 /* LocalDevicesModel.swift in Sources */,
 				8B055DA320EF10A4002B0734 /* ProxyViewModel.swift in Sources */,
+				8B055DFD20F335B5002B0734 /* RemotePeersViewController.swift in Sources */,
 				8B055D4A20E72CF4002B0734 /* LocalDeviceViewModel.swift in Sources */,
 				8B055D7220EB067B002B0734 /* TestCaseViewController.swift in Sources */,
 				8B055D4720E72B5C002B0734 /* LocalDeviceCell.swift in Sources */,

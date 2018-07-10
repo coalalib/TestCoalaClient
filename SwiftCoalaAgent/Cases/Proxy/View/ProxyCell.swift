@@ -22,7 +22,7 @@ class ProxyCell: UITableViewCell {
   }
   
   func configure(with viewModel: ArqDeviceViewModel) {
-    nameLabel.text = viewModel.device.peerInfo?.name ?? viewModel.device.address
+    nameLabel.text = viewModel.device.peerInfo?.name ?? (viewModel.device.address.isEmpty ? viewModel.device.cid : viewModel.device.address)
     cidLabel.text = viewModel.device.peerInfo?.cid
     if let speed = viewModel.transferedSpeed, let data = viewModel.dataSize {
       messageLabel.text = "Data of size \(data) Kbytes \nwas transfered with speed \(speed) KBytes/s"

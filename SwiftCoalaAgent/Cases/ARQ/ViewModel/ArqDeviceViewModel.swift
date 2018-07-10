@@ -14,7 +14,12 @@ struct ArqDeviceViewModel: Hashable {
   var transferedSpeed: Int?
   var dataSize: Int?
   var hashValue: Int {
+    if let cid = device.cid {
+      return device.address.hashValue ^ cid.hashValue
+    }
     return device.address.hashValue
   }
+  
+  
   
 }
