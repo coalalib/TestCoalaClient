@@ -15,8 +15,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "run(coala:message:fromAddress:ack:)"
-            landmarkType = "7">
+            landmarkName = "SecurityLayer"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -159,7 +159,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
             endingLineNumber = "78"
-            landmarkName = "handleIncomingHandshake(coala:message:fromAddress:)"
+            landmarkName = "run(coala:message:fromAddress:ack:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCoalaAgent/Cases/Proxy/View/ProxyViewController.swift"
-            timestampString = "552895729.072118"
+            timestampString = "552897258.653273"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
